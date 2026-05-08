@@ -130,7 +130,7 @@ proxy-groups:
   - {name: Spotify,   <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Spotify.png} 
   - {name: PayPal,    <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/PayPal.png}
   - {name: Speedtest, <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Speedtest.png}
-  - {name: adblock,   <<: *Anchor_OB, icon: https://github.com/Orz-3/mini/blob/master/Color/Adblock.png}
+  - {name: adblock,   <<: *Anchor_OB, icon: https://github.com/Koolson/Qure/blob/master/IconSet/AdBlack.png}
   - {name: 漏网之鱼,   <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/MATCH.png}
 
 # 策略组（按区域分组）
