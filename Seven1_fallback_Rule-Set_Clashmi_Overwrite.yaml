@@ -130,6 +130,7 @@ proxy-groups:
   - {name: Spotify,   <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Spotify.png} 
   - {name: PayPal,    <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/PayPal.png}
   - {name: Speedtest, <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Speedtest.png}
+  - {name: adblock,   <<: *Anchor_OB, icon: https://github.com/Orz-3/mini/blob/master/Color/Adblock.png}
   - {name: 漏网之鱼,   <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/MATCH.png}
 
 # 策略组（按区域分组）
@@ -200,7 +201,7 @@ rules:
   - RULE-SET,twitter_ip,Twitter,no-resolve                              # Twitter
   - RULE-SET,netflix_ip,Netflix,no-resolve                              # Netflix
   - RULE-SET,add_direct_domain,DIRECT                                   # 直连域名
-  - RULE-SET,adblock,no-resolve                                             # 广告
+  - RULE-SET,ad_block,adblock                                           # 广告
   - RULE-SET,cn_domain,DIRECT                                           # 中国域名
   - RULE-SET,cn_ip,DIRECT,no-resolve                                    # 中国IP
   - MATCH,漏网之鱼                                                       # 兜底规则
@@ -228,7 +229,7 @@ rule-providers:
   geolocation-!cn:   { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
   cn_domain:         { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   add_direct_domain: { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/Seven1echo/Yaml/refs/heads/main/rules/Seven1_Direct_Domain.mrs"}
-  adblock:           { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt"}
+  ad_block:           { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt"}
 
   # IP规则
   private_ip:        { <<: *Anchor_IP, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"}
